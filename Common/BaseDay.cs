@@ -1,8 +1,8 @@
-﻿namespace AdventOfCode.Solutions;
+﻿namespace AdventOfCode.Common;
 
 public class BaseDay
 {
-    protected List<string> ReadFile(string fileName)
+    protected static List<string> ReadFile(string fileName)
     {
         return File.ReadAllLines(Path.Combine("Inputs/2023", fileName)).ToList();
     }

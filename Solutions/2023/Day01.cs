@@ -4,7 +4,7 @@ namespace AdventOfCode.Solutions._2023;
 
 public class Day01: BaseDay
 {
-    public string Question01()
+    public override string Question01()
     {
         var file =  nameof(Day01) + "_01.txt";
         var inputValues = ReadFile(file);
@@ -32,7 +32,7 @@ public class Day01: BaseDay
     }
     
     // result 53539
-    public string Question02()
+    public override string Question02()
     {
         var file =  nameof(Day01) + "_01.txt";
         var inputValues = ReadFile(file);

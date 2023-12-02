@@ -71,10 +71,10 @@ public class Day02: BaseDay
         var totalOfPower = 0;
         foreach (var game in games)
         {
-            var minBlue = game.Value.MaxBy(o => o.Blue)!.Blue;
-            var minGreen = game.Value.MaxBy(o => o.Green)!.Green;
-            var minRed = game.Value.MaxBy(o => o.Red)!.Red;
-            var totalOfPowerOfGame = minBlue * minGreen * minRed;
+            var maxBlue = game.Value.MaxBy(o => o.Blue)!.Blue;
+            var maxGreen = game.Value.MaxBy(o => o.Green)!.Green;
+            var maxRed = game.Value.MaxBy(o => o.Red)!.Red;
+            var totalOfPowerOfGame = maxBlue * maxGreen * maxRed;
             totalOfPower += totalOfPowerOfGame;
         }
 
